@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Daniel García - Developer</title>
+
+		<!-- Javascript files -->
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.js"></script>
+		<script src="assets/js/jquery.sticky.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/jquery.easypiechart.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.cbpQTRotator.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/i18next-1.10.1.min.js"></script>
+		<script src="assets/js/translations.js"></script>
+		<script src="assets/js/detectmobilebrowser.js"></script>
+		<script src="assets/js/modernizr.custom.js"></script>
+
+		<!-- CSS -->
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+		<link href="assets/css/animate.css" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="assets/images/dgarcia.png">
+
+		<!-- Custom styles CSS -->
+		<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+	</head>
+	<body>
+
+		<script>
+				var element = document.createElement("link");
+				element.setAttribute("rel", "stylesheet");
+				element.setAttribute("type", "text/css");
+				if (jQuery.browser.mobile){
+					element.setAttribute("href", "assets/css/media-query-mobile.css");
+				} else {
+					element.setAttribute("href", "assets/css/media-query-desktop.css");
+				}
+				document.getElementsByTagName("head")[0].appendChild(element);
+		</script>
+
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status"></div>
+		</div>
+
+		<!-- HOME start -->
+		<section id="home" class="pfblock-image screen-height">
+			<div class="home-overlay"></div>
+
+			<div class="intro" data-i18n="[html]home.start"></div>
+
+			<a href="#services">
+				<div class="scroll-down">
+					<span>
+						<i class="fa fa-angle-down fa-2x"></i>
+					</span>
+				</div>
+			</a>
+		</section>
+		<!-- HOME end -->
+
+
+		<!-- NAVIGATION BAR start -->
+		<header class="header">
+			<nav class="navbar navbar-custom" role="navigation">
+				<div class="container">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#home">DGP</a>
+						<div class="nav navbar-nav idioma">
+							<li class="idioma-centre-en"><a>EN</a></li>
+							<li><a>|</a></li>
+							<li class="idioma-centre-es"><a>ES</a></li>
+						</div>
+					</div>
+
+					<div class="collapse navbar-collapse" id="custom-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" data-i18n="bar-menu.home"></a></li>
+							<li><a href="#services" data-i18n="bar-menu.services"></a></li>
+							<li><a href="#portfolio" data-i18n="bar-menu.portfolio"></a></li>
+							<li><a href="#skills" data-i18n="bar-menu.skills"></a></li>
+							<li><a href="#contact" data-i18n="bar-menu.contact"></a></li>
+							<li class="idioma-en"><a>EN</a></li><li><a>|</a></li><li class="idioma-es"><a>ES</a></li>
+						</ul>
+					</div>
+
+				</div><!-- .container -->
+			</nav>
+		</header>
+		<!-- NAVIGATION BAR end -->
+
+
+		<!-- SERVICES start -->
+		<section id="services" class="pfblock pfblock-gray">
+			<div class="container services">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title" data-i18n="services.title"></h2>
+							<div class="pfblock-line"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="iconbox wow slideInLeft">
+							<div class="iconbox-icon">
+								<span class="icon-note"></span>
+								<span class="icon-settings"></span>
+								<span class="icon-rocket"></span>
+							</div>
+							<div class="iconbox-text">
+								<h3 class="iconbox-title" data-i18n="[html]services.box.0.title"></h3>
+								<div class="iconbox-desc" data-i18n="[html]services.box.0.content"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+
+						<div class="iconbox wow slideInLeft">
+							<div class="iconbox-icon">
+								<span class="icon-screen-desktop"></span>
+								<span class="icon-globe"></span>
+								<span class="icon-screen-smartphone"></span>
+							</div>
+							<div class="iconbox-text">
+								<h3 class="iconbox-title" data-i18n="[html]services.box.1.title"></h3>
+								<div class="iconbox-desc" data-i18n="[html]services.box.1.content"></div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-4">
+
+						<div class="iconbox wow slideInRight">
+							<div class="iconbox-icon">
+								<span class="icon-puzzle"></span>
+								<span class="icon-question"></span>
+								<span class="icon-users"></span>
+							</div>
+							<div class="iconbox-text">
+								<h3 class="iconbox-title" data-i18n="[html]services.box.2.title"></h3>
+								<div class="iconbox-desc" data-i18n="[html]services.box.2.content"></div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section>
+		<!-- SERVICES end -->
+
+		<!-- PORTFOLIO start -->
+		<section id="portfolio" class="pfblock">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title" data-i18n="portfolio.title"></h2>
+							<div class="pfblock-line"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row no-gutter">
+
+					<div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay=".5s"
+						   data-toggle="modal" data-target="#downtorrent-modal">
+						<a class="portfolio-box">
+							<img src="assets/images/portfolio/downtorrent.png" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										DownTorrent
+									</div>
+									<div class="project-name" data-i18n="portfolio.more-info"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 wow fadeInDown" data-wow-delay=".5s"
+						   data-toggle="modal" data-target="#smartculm-modal">
+						<a class="portfolio-box">
+							<img src="assets/images/portfolio/smartculm.png" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										SmartCULM
+									</div>
+									<div class="project-name" data-i18n="portfolio.more-info"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 wow fadeInRight" data-wow-delay=".5s"
+						    data-toggle="modal" data-target="#urlshortener-modal">
+						<a class="portfolio-box">
+							<img src="assets/images/portfolio/urlshortener.png" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										MediumCandy<br>URLShortener
+									</div>
+									<div class="project-name" data-i18n="portfolio.more-info"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay=".5s"
+						   data-toggle="modal" data-target="#reina-modal">
+						<a class="portfolio-box">
+							<img src="assets/images/portfolio/reina.png" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										Routes EINA
+									</div>
+									<div class="project-name" data-i18n="portfolio.more-info"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s"
+						 data-toggle="modal" data-target="#bizi-meteo-modal">
+						<a class="portfolio-box">
+							<img src="assets/images/portfolio/bizi-meteo.png" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										Bizi-Meteo
+									</div>
+									<div class="project-name" data-i18n="portfolio.more-info"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay=".5s">
+						<a href="#portfolio" class="portfolio-box">
+							<img src="assets/images/portfolio/MoreSoon.png" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded" data-i18n="portfolio.more.title"></div>
+									<div class="project-name" data-i18n="portfolio.more.subtitle"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div><!-- .contaier -->
+		</section>
+		<!-- PORTFOLIO end -->
+
+
+		<!-- CALL_TO_ACTION start -->
+
+		<section class="calltoaction">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 col-lg-12">
+						<h2 class="wow slideInRight" data-wow-delay=".1s" data-i18n="calltoaction.title"></h2>
+						<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s"
+							    data-i18n="[html]calltoaction.subtitle">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 calltoaction-btn wow slideInRight" data-wow-delay=".3s" id="cv-btn">
+						<a href="http://my-custom-dns/welcome/assets/cv.pdf" target="_blank" 
+							    class="btn btn-lg" data-i18n="calltoaction.button.cv"></a>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4  calltoaction-btn wow slideInRight" id="linkedin-btn">
+						<a href="https://es.linkedin.com/pub/daniel-garcía-páez/82/518/945" target="_blank"
+									    class="btn btn-lg" data-i18n="calltoaction.button.linkedin"></a>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4  calltoaction-btn wow slideInRight" data-wow-delay=".3s" id="contact-btn">
+						<a href="#contact" class="btn btn-lg" data-i18n="calltoaction.button.contact"></a>
+					</div>
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section>
+		<!-- CALL_TO_ACTION end -->
+
+
+		<!-- SKILLS start -->
+		<section class="pfblock pfblock-gray" id="skills">
+			<div class="container">
+				<!-- FRONTEND SKILLS -->
+				<div class="row frontend-skills">
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="pfblock-header wow fadeInUp">
+								<h2 class="pfblock-title" data-i18n="[html]skills.frontend.title"></h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="90" class="frontend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/html-css.png" alt="HTML5/CSS3"></span>
+						</span>
+						<h3 class="text-center">HTML5 / CSS3</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="80" class="frontend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/extjs.png" alt="ExtJS"></span>
+						</span>
+						<h3 class="text-center">ExtJS</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="70" class="frontend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/jquery.png" alt="JQuery"></span>
+						</span>
+						<h3 class="text-center">JQuery</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="70" class="frontend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/vuejs.png" alt="VueJS"></span>
+						</span>
+						<h3 class="text-center">VueJS</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="60" class="frontend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/responsive-design.png" alt="Responsive design"></span>
+						</span>
+						<h3 class="text-center">Responsive Design</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<a class="frontend-more-button" data-toggle="modal" data-target="#frontend-more-modal">
+							<img src="assets/images/icons/more-frontend.png" alt="JS" style="height: 100px">
+							<h3 class="text-center" style="margin-top: 20px;" data-i18n="skills.and-more"></h3>
+						</a>
+					</div>
+				</div><!--End row -->
+
+				<!-- BACKEND SKILLS -->
+				<div class="row backend-skills">
+					<div class="row">
+
+						<div class="col-sm-12">
+							<div class="pfblock-header wow fadeInUp">
+								<h2 class="pfblock-title" data-i18n="[html]skills.backend.title"></h2>
+							</div>
+						</div>
+
+					</div><!-- .row -->
+
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="90" class="backend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/nodejs.png" alt="NodeJS"></span>
+						</span>
+						<h3 class="text-center">NODEJS</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="80" class="backend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/strongloop.png" alt="Loopback"></span>
+						</span>
+						<h3 class="text-center">Loopback</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="70" class="backend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/expressjs.png" alt="ExpressJS"></span>
+						</span>
+						<h3 class="text-center">ExpressJS</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="70" class="backend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/php.png" alt="PHP"></span>
+						</span>
+						<h3 class="text-center">PHP</h3>
+					</div>
+
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="80" class="backend-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/mysql.png" alt="MySQL"></span>
+						</span>
+						<h3 class="text-center">MySQL</h3>
+					</div>
+
+
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<a class="backend-more-button" data-toggle="modal" data-target="#backend-more-modal">
+							<img src="assets/images/icons/more-backend.png" alt="JS" style="height: 100px">
+							<h3 class="text-center" style="margin-top: 20px;" data-i18n="skills.and-more"></h3>
+						</a>
+					</div>
+
+				</div><!--End row -->
+
+
+				<!-- OTHER SKILLS -->
+				<div class="row other-skills">
+					<div class="row">
+
+						<div class="col-sm-12">
+							<div class="pfblock-header wow fadeInUp">
+								<h2 class="pfblock-title" data-i18n="[html]skills.other.title"></h2>
+							</div>
+						</div>
+
+					</div><!-- .row -->
+
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="70" class="other-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/linux.png" alt="Linux Administration"></span>
+						</span>
+						<h3 class="text-center">Linux Administration</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="70" class="other-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/aws.png" alt="AWS"></span>
+						</span>
+						<h3 class="text-center">AWS</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="60" class="other-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/docker.png" alt="Docker"></span>
+						</span>
+						<h3 class="text-center">Docker</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="60" class="other-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img style="height:90px;margin-top:18px;" src="assets/images/icons/testing.png" alt="TDD"></span>
+						</span>
+						<h3 class="text-center">TDD</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center">
+						<span data-percent="50" class="other-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+							<span class="chart-icon"><img src="assets/images/icons/salesforce.png" alt="Salesforce"></span>
+						</span>
+						<h3 class="text-center">Salesforce</h3>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-2 text-center" style="opacity: 0.5;">
+						<a class="more-button" data-toggle="modal" data-target="#other-more-modal">
+							<img src="assets/images/icons/more-other.png" alt="And more..." style="height: 100px">
+							<h3 class="text-center" style="margin-top: 20px;" data-i18n="skills.and-more"></h3>
+						</a>
+					</div>
+				</div><!--End row -->
+			</div>
+		</section>
+		<!-- SKILLS end -->
+
+
+		<!-- CONTACT start -->
+		<section id="contact" class="pfblock">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header">
+							<h2 class="pfblock-title" data-i18n="contact.title"></h2>
+							<div class="pfblock-line"></div>
+						</div>
+					</div>
+				</div><!-- .row -->
+
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+
+						<form id="contact-form" role="form">
+							<div class="ajax-hidden">
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="c_name" data-i18n="contact.form.0.field"></label>
+									<div>
+										<input type="text" id="c_name" class="form-control" name="c_name"
+							      data-i18n="[placeholder]contact.form.0.placeholder"/>
+										<label id="c_name_error"></label>
+									</div>
+								</div>
+
+								<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+									<label class="sr-only" for="c_email" data-i18n="contact.form.1field"></label>
+									<input type="email" id="c_email" class="form-control" name="c_email" 
+										data-i18n="[placeholder]contact.form.1.placeholder"/>
+									<label id="c_email_error"></label>
+								</div>
+
+								<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+									<textarea class="form-control" id="c_message" name="c_message" rows="7"
+									data-i18n="[placeholder]contact.form.2.placeholder" title="contact-msg"></textarea>
+									<label id="c_message_error"></label>
+								</div>
+
+								<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s" data-i18n="contact.button"></button>
+							</div>
+							<div class="ajax-response-fail"></div>
+							<div class="ajax-response-ok"></div>
+						</form>
+
+					</div>
+				</div>
+
+			</div><!-- .container -->
+		</section>
+		<!-- CONTACT end -->
+
+
+		<!-- Scroll to top -->
+		<div class="scroll-up">
+			<a href="#home"><i class="fa fa-angle-up"></i></a>
+		</div>
+		<!-- Scroll to top end-->
+
+
+		<!-- MODALS -->
+
+		<!-- Smartculm project modal -->
+		<div id="smartculm-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">SmartCULM</h4>
+					</div>
+					<div class="modal-body" data-i18n="[html]project-modal.body.0"></div>
+					<div class="modal-footer">
+						<div>
+							<i class="fa fa-users fa-2x contributors-icon smartculm-colaborators" data-placement="right"
+								data-toggle="popover" title="Contributors" 
+								data-content='<a href="https://es.linkedin.com/in/carlosmartcast" target="_blank">Carlos Martinez Castillero</a><br>
+				    <a href="https://es.linkedin.com/pub/david-recuenco-gadea/73/94/8ba" target="_blank">David Recuenco Gadea</a><br>
+				    <a href="https://es.linkedin.com/pub/alberto-berbel-aznar/a4/55b/81b" target="_blank">Alberto Berbel Aznar</a><br>
+				    <a href="https://es.linkedin.com/pub/jorge-garuz-sánchez/70/510/509" target="_blank">Jorge Garuz Sánchez</a><br>
+				    <a href="https://es.linkedin.com/in/gginestra" target="_blank">Guillermo Ginestra </a>'>
+							</i>
+						</div>
+						<div>
+							<a type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</a>
+							<a type="button" class="btn btn-primary other-btn"
+								href="https://github.com/daniegarcia254/SmartCULM" target="_blank">
+								Github<i class="fa fa-github fa-2x pers-icon"></i>
+							</a>
+							<a type="button" class="btn btn-primary other-btn" disabled 
+								href="https://www.dropbox.com/s/ei69gzmsjk7p8ks/SmartCULM.apk?dl=0" target="_blank">
+								Android APK<i class="fa fa-android fa-2x pers-icon"></i>
+							</a>
+							<a type="button" class="btn btn-primary other-btn" data-i18n="[html]project-modal.button-demo"
+							  href="http://www.unizar.es/idiomas/movil/" target="_blank">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Smartculm project modal end -->
+
+		<!-- URLShortener project modal -->
+		<div id="urlshortener-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">MediumCandy URLShortener</h4>
+					</div>
+					<div class="modal-body" data-i18n="[html]project-modal.body.1"></div>
+					<div class="modal-footer">
+						<div>
+							<i class="fa fa-users fa-2x contributors-icon smartculm-colaborators" data-placement="right" 
+								data-toggle="popover" title="Contributors"
+								data-content='<a href="https://es.linkedin.com/in/carlosmartcast" target="_blank">Carlos Martinez Castillero</a><br><a href="https://es.linkedin.com/pub/alberto-berbel-aznar/a4/55b/81b" target="_blank">Alberto Berbel Aznar</a><br><a href="https://es.linkedin.com/in/gginestra" target="_blank">Guillermo Ginestra </a>'>
+							</i>
+						</div>
+						<div>
+							<a type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</a>
+							<a type="button" class="btn btn-primary other-btn" 
+								href="https://github.com/daniegarcia254/URL-Shortener" target="_blank">
+								Github<i class="fa fa-github fa-2x pers-icon"></i>
+							</a>
+							<a type="button" class="btn btn-primary other-btn" data-i18n="[html]project-modal.button-demo"
+							  href="http://my-custom-dns/urlshortener" target="_blank">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- URLShortener project modal end -->
+
+		<!-- DownTorrent project modal -->
+		<div id="downtorrent-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">DownTorrent</h4>
+					</div>
+					<div class="modal-body" data-i18n="[html]project-modal.body.2"></div>
+					<div class="modal-footer">
+						<div>
+							<a type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</a>
+							<a type="button" class="btn btn-primary other-btn" 
+								href="https://github.com/daniegarcia254/DownTorrent" target="_blank">
+								Github<i class="fa fa-github fa-2x pers-icon"></i>
+							</a>
+							<a type="button" class="btn btn-primary other-btn" data-i18n="[html]project-modal.button-demo"
+							  href="http://my-custom-dns:10005/downtorrent" target="_blank">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- DownTorrent project modal end -->
+
+		<!-- BIZI-METEO project modal -->
+		<div id="bizi-meteo-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Bizi-Meteo</h4>
+					</div>
+					<div class="modal-body" data-i18n="[html]project-modal.body.3"></div>
+					<div class="modal-footer">
+						<div>
+							<i class="fa fa-users fa-2x contributors-icon smartculm-colaborators" data-placement="right"
+									     data-toggle="popover" title="Contributors"
+				    data-content='<a href="https://es.linkedin.com/pub/javier-briz/23/a0a/3a7/es" target="_blank">Javier Briz Alaustre</a>'></i>
+						</div>
+						<div>
+							<a type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</a>
+							<a type="button" class="btn btn-primary other-btn"
+								href="https://github.com/daniegarcia254/bizi-meteo" target="_blank">
+								Github<i class="fa fa-github fa-2x pers-icon"></i>
+							</a>
+							<a type="button" class="btn btn-primary other-btn" data-i18n="[html]project-modal.button-demo"
+								href="http://my-custom-dns/stw" target="_blank">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- BIZI-METEO project modal end -->
+
+		<!-- REINA project modal -->
+		<div id="reina-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Routes EINA</h4>
+					</div>
+					<div class="modal-body" data-i18n="[html]project-modal.body.4"></div>
+					<div class="modal-footer">
+						<div>
+							<i class="fa fa-users fa-2x contributors-icon smartculm-colaborators" data-placement="right"
+									     data-toggle="popover" title="Contributors"
+				    data-content='<a href="https://es.linkedin.com/pub/david-recuenco-gadea/73/94/8ba" target="_blank">David Recuenco Gadea</a><br>
+				    <a href="https://es.linkedin.com/pub/jorge-garuz-sánchez/70/510/509" target="_blank">Jorge Garuz Sánchez</a><br>
+				    <a>Ramon Arellano</a>'>
+							</i>
+						</div>
+						<div>
+							<a type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</a>
+							<a type="button" class="btn btn-primary other-btn" 
+								href="https://gitlab.com/daniegarcia254/LabIS" target="_blank">
+								Github<i class="fa fa-github fa-2x pers-icon"></i>
+							</a>
+							<a type="button" class="btn btn-primary other-btn" data-i18n="[html]project-modal.button-demo"
+								href="http://my-custom-dns/reina" target="_blank">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- REINA project modal end -->
+
+		<!-- FRONTEND MORE SKILLS modal -->
+		<div id="frontend-more-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" data-i18n="[html]skills-modal.frontend.title"></h4>
+					</div>
+					<div class="modal-body frontend-skills-more">
+						<div class="row">
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="60" class="frontend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/angularjs.png" alt="AngularJS"></span>
+								</span>
+								<h3 class="text-center">Angular JS</h3>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="60" class="frontend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/ionic.png" alt="Ionic Framework"></span>
+								</span>
+								<h3 class="text-center">Ionic Framework</h3>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="60" class="frontend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/leaflet.png" alt="Leaflet JS"></span>
+								</span>
+								<h3 class="text-center">Leaflet JS</h3>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="30" class="frontend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/android.png" alt="Android"></span>
+								</span>
+								<h3 class="text-center">Android</h3>
+							</div>
+						</div><!--End row -->
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FRONTEND MORE SKILLS modal end -->
+
+		<!-- BACKEND MORE SKILLS modal -->
+		<div id="backend-more-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" data-i18n="[html]skills-modal.backend.title"></h4>
+					</div>
+					<div class="modal-body backend-skills-more">
+						<div class="row">
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="65" class="backend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/java.png" alt="Java"></span>
+								</span>
+								<h3 class="text-center">JAVA</h3>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="50" class="backend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/postgresql.png" alt="PostgreSQL"></span>
+								</span>
+								<h3 class="text-center">PostgreSQL<br><span class="detail">(with PostGIS and PgRouting)</span></h3>
+							</div>
+
+							<div class="col-xs-6 col-sm-3 col-md-3 text-center">
+								<span data-percent="50" class="backend-more-chart easyPieChart" style="width: 100px; height: 80px; line-height: 50px;">
+									<span class="chart-icon"><img src="assets/images/icons/mongodb.png" alt="MongoDB"></span>
+								</span>
+								<h3 class="text-center">MongoDB</h3>
+							</div>
+						</div><!--End row -->
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+		<!-- BACKEND MORE SKILLS modal end -->
+
+		<!-- MODALS END-->
+	</body>
+</html>

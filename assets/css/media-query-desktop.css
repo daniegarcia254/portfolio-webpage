@@ -1,0 +1,267 @@
+/* ---------------------------------------------- /*
+ * Language
+/* ---------------------------------------------- */
+@media (min-width: 767px){
+    .idioma { display: none}
+}
+@media (max-width: 767px){
+    .header ul li:nth-child(6){  display: none;  }
+    .header ul li:nth-child(7){  display: none;  }
+    .header ul li:nth-child(8){  display: none;  }
+    .idioma {
+        display: inline-flex;
+        vertical-align: middle;
+        margin-left: 30%;
+    }
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 650px) {
+    .idioma {margin-left: 25%}
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 500px) {
+    .idioma {margin-left: 20%}
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 450px) {
+    .idioma {margin-left: 15%}
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 400px) {
+    .idioma {margin-left: 10%}
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 350px) {
+    .idioma {margin-left: 5%}
+}
+
+/* ---------------------------------------------- /*
+ * Home
+/* ---------------------------------------------- */
+@media handheld, screen and (max-width: 1230px) {
+    #home {  background: url(../images/main2.png);  }
+    .home-overlay {  background-image: url("../images/main2.png");  }
+    .intro {
+        top: 70%;
+        left: 10%;
+    }
+}
+@media handheld, screen and (max-width: 992px) {
+    .intro h1{  font-size: 25px;  }
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 885px) {
+    .intro {  left: 15%;  }
+}
+
+@media handheld, screen and (orientation: portrait) and (max-width: 480px) {
+    .intro {  top: 62%;  }
+    .intro h1{  font-size: 25px;  }
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 370px) {
+    .intro .start{  font-size: 18px;  }
+}
+
+@media handheld, screen and (orientation: portrait) and (max-height: 550px){
+    #home {  background: url(../images/main3.png);  }
+    .home-overlay {
+        background-image: url("../images/main3.png");
+        background-repeat: no-repeat;
+        height: 0;
+    }
+    .scroll-down { border-color: #000000; }
+    .scroll-down i { color: #000000; }
+    .intro {
+        top: 18%;
+        left: 11%;
+    }
+    .intro .start {
+        color: black;
+        font-size: 15px;
+    }
+    .intro h1 {
+        font-size: 18px;
+        color: black;
+    }
+    @media handheld, screen and (max-height: 500px){
+        .intro { top: 20%; }
+    }
+    @media handheld, screen and (max-height: 450px){
+        .intro { top: 25%; }
+    }
+    @media handheld, screen and (max-height: 350px){
+        .intro { top: 30%; }
+    }
+}
+
+@media handheld, screen and (orientation: landscape) and (max-width: 680px) {
+    .intro {
+        top: 75%;
+        left: 0;
+    }
+    .intro h1 {  font-size: 20px;  }
+}
+@media handheld, screen and (orientation: landscape) and (max-height: 350px){
+    #home {  background: url(../images/main3.png);  }
+    .home-overlay {  background-image: url("../images/main3.png");  }
+    .intro {
+        top: 18%;
+        left: 11%;
+    }
+    .intro .start {
+        color: black;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .intro h1 {
+        font-size: 14px;
+        color: black;
+    }
+    @media handheld, screen and (min-width: 520px) {
+        .intro {  left: 12%;  }
+    }
+    @media handheld, screen and (min-width: 550px) {
+        .intro {  left: 14%;  }
+    }
+    @media handheld, screen and (min-width: 550px) {
+        .intro {  left: 15%;  }
+    }
+}
+
+@media handheld, screen and (orientation: landscape) and (max-height: 290px){
+    .intro {  top: 20%;  }
+}
+@media handheld, screen and (orientation: landscape) and (max-height: 250px){
+    .intro {  top: 25%;  }
+}
+
+
+/* ---------------------------------------------- /*
+ * Services
+/* ---------------------------------------------- */
+@media handheld, screen and (max-width: 1030px) {
+    .iconbox {
+        height: 300px;
+    }
+}
+@media handheld, screen and (max-width: 767px){
+    .iconbox { height: 250px; }
+}
+@media handheld, screen and (orientation: landscape) and (max-width: 680px) {
+    .pfblock-title {font-size: 20px; }
+    .iconbox { height: 250px; }
+}
+
+
+/* ---------------------------------------------- /*
+ * Calltoaction responsive
+/* ---------------------------------------------- */
+@media handheld, screen and (max-width: 1200px) {
+    #linkedin-btn {  margin-left: -80px;  }
+}
+
+@media handheld, screen and (max-width: 992px) {
+    #cv-btn {  margin-left: 20px;  }
+    #linkedin-btn {  margin-left: 0px;  }
+    #contact-btn {  margin-left: 80px;  }
+}
+
+@media handheld, screen and (max-width: 767px) {
+    #cv-btn {  margin-left: 0px;  }
+    #linkedin-btn {  margin-left: 0px;  }
+    #contact-btn {  margin-left: 0px;  }
+}
+
+@media (max-width: 767px) {
+
+    .calltoaction {
+        text-align: center;
+    }
+
+}
+
+/* ---------------------------------------------- /*
+ * Projects
+/* ---------------------------------------------- */
+@media handheld, screen and (max-width: 850px) {
+    #downtorrent-modal a:nth-child(4){
+        position: absolute;
+        margin-top: 55px;
+        margin-left: -230px;
+    }
+    #smartculm-modal a:nth-child(4){
+        position: absolute;
+        margin-top: 55px;
+        margin-left: -177px;
+    }
+    #smartculm-modal .modal-footer { height: 130px; }
+    #downtorrent-modal .modal-footer { height: 80px; }
+}
+
+@media handheld, screen and (max-width: 550px) {
+    #smartculm-modal .modal-footer a:nth-child(1), #downtorrent-modal a:nth-child(1){
+        position: absolute;
+        margin-top: 165px;
+        margin-left: -100px;
+    }
+    #smartculm-modal a:nth-child(2), #downtorrent-modal a:nth-child(2){
+        position: absolute;
+        margin-top: 110px;
+        margin-left: -140px;
+    }
+    #smartculm-modal a:nth-child(3), #downtorrent-modal a:nth-child(3){
+        position: absolute;
+        margin-top: 55px;
+        margin-left: -180px;
+    }
+    #smartculm-modal a:nth-child(4) {
+        position: absolute;
+        margin-top: 0;
+        margin-left: -180px;
+    }
+    #downtorrent-modal a:nth-child(4){
+        position: absolute;
+        margin-top: 0;
+        margin-left: -230px;
+    }
+    #downtorrent-modal .modal-footer, #smartculm-modal .modal-footer { height: 230px; }
+    #bizi-meteo-modal a:nth-child(3), #urlshortener-modal a:nth-child(3), #reina-modal a:nth-child(3) {
+        margin-top: 10px;
+    }
+}
+
+
+/* ---------------------------------------------- /*
+ * Skills
+/* ---------------------------------------------- */
+@media handheld, screen and (max-width: 767px) {
+    #skills h3, #frontend-more-modal h3, #backend-more-modal h3{
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+    .frontend-more-button h3 {margin-top: 10px !important;}
+    .backend-more-button h3 {margin-top: 10px !important;}
+    .more-button h3 {margin-top: 10px !important;}
+}
+
+@media handheld, screen and (orientation: portrait) and (max-width: 490px) {
+    #frontend-more-modal h3, #backend-more-modal h3 {
+        font-size: 12px;
+    }
+}
+@media handheld, screen and (orientation: portrait) and (max-width: 465px) {
+    #frontend-more-modal h3, #backend-more-modal h3 {
+        font-size: 10px;
+    }
+}
+
+
+/* ---------------------------------------------- /*
+ * Others
+/* ---------------------------------------------- */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0 0 30px;
+        letter-spacing: 3px;
+    }
+}

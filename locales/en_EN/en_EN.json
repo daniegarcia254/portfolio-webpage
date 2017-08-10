@@ -1,0 +1,194 @@
+{
+  "home": {
+    "start":"<div class=\"start\">Hello, my name is __name__ and I'm a</div><h1>Software</h1><h1>Engineer</h1><h1>&amp;</h1><h1>Developer</h1>"
+  },
+  "bar-menu": {
+    "home":"Home",
+    "services":"Services",
+    "portfolio":"Projects",
+    "skills":"Skills",
+    "contact":"Contact"
+  },
+  "services": {
+    "title": "This is what I do",
+    "box": [
+      {
+        "title": "Software Engineering",
+        "content":"Analysis, requirements, software design & architecture, software development and testing, CI, etc."
+      },
+      {
+        "title": "Web Programming",
+        "content":"Full stack developer.<br>Modern Javascript development lover.<br>Backend will always be more interesting!"
+      },
+      {
+        "title": "Sky is the limit",
+        "content":"Never stop learning!<br>Never stop discovering new languages, frameworks, people, etc.<br>We live for this!"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "My Projects",
+    "more-info": "Click for more info...",
+    "more": {
+      "title": "More to come",
+      "subtitle": "Stay tuned..."
+    }
+  },
+  "calltoaction": {
+    "title": "ARE YOU READY TO START?",
+    "subtitle": "I'm more than ready. You won't regret it!!",
+    "button": {
+      "cv": "Download CV",
+      "linkedin": "My Linkedin Profile",
+      "contact": "Contact Me"
+    }
+  },
+  "skills": {
+    "frontend":{ "title": "My Frontend Skills" },
+    "backend":{ "title": "My Backend Skills" },
+    "other":{ "title": "Other Skills" },
+    "and-more": "And more..."
+
+  },
+  "contact": {
+    "title":"Drop me a line",
+    "form":[
+      {
+        "field":"Name",
+        "placeholder":"Name"
+      },
+      {
+        "field":"Email",
+        "placeholder":"Email"
+      },
+      {
+        "field":"Message",
+        "placeholder":"Message"
+      }
+    ],
+    "button":"Send Message"
+  },
+  "project-modal":{
+    "button-demo":"Go to Demo <i class=\"fa fa-chevron-right fa-2x pers-icon\"></i>",
+    "button-admin-demo":"Go to Admin Demo <i class=\"fa fa-chevron-right fa-2x pers-icon\"></i>",
+    "body":[
+      [
+        "<p>SmartCulm is a mobile && web app developed for the <a href=\"http://culm.unizar.es/\">CULM</a>",
+        "(Centro Universitario de Lenguas Modernas de Zaragoza).</p>",
+        "The app provides to the students access to all the information needed about the CULM for a more pleasent",
+        "stay in the center during the course:",
+        "<ul>",
+        "<li>News and notifications about the centre</li>",
+        "<li>Schedules of all subjects imparted in the centre by teacher, level, building... </li>",
+        "<li>Information about all the teachers (office, tutorials, contact email, etc.)</li>",
+        "<li>Exam and academic calendars</li>",
+        "<li>Information about the campus (contact phone, address, map, etc.) </li>",
+        "</ul>",
+        "Used technologies for the development:",
+        "<ul>",
+        "<li>Frontend: AngularJS && Ionic Framework</li>",
+        "<li>Backend: JAX-RS, JSoup for the web-scrapping</li>",
+        "<li>DB: Oracle SQL</li>",
+        "</ul>",
+	"<p>The Android APK is not available since it has been removed from the official repository</p>",
+	"<p>The demo, preferably, should be tested in a mobile device browser.</p>"
+      ],
+      [
+        "MediumCandy URLShortener is an experimental URL shortener with the following functionalities:",
+        "<ul>",
+        "<li>Short an url if reachable and valid</li>",
+        "<li>Short url's included in a CSV file</li>",
+        "<li>Short url with personalized branded-links</li>",
+        "<li>Get info and stats over a shortened url</li>",
+        "</ul><br>",
+        "Used technologies for the development:",
+        "<ul>",
+        "<li>Frontend: HTML5/CSS3, JQuery && Responsive Media Queries</li>",
+        "<li>Backend: RESTful web service with JAX-RS && Spring Framework</li>",
+        "<li>DB: No persistence</li>",
+        "</ul><br>"
+      ],
+      [
+        "<p>DownTorrent is a webapp that simplifies and unifies the process of download a torrent. In the same app you can:</p>",
+        "<ul>",
+        "<li>Search for a torrent in The Pirate Bay</li>",
+        "<li>Download and manage (delete, pause, resume) the torrent as well as watch the download progress</li>",
+        "<li>Scan the downloaded torrents with an antivirus if you want to make sure it is free of viruses</li>",
+        "<li>Upload the torrents to a S3 bucket, and download them anytime you want</li>",
+        "</ul>",
+	"<p><b>This project is motivated</b> by the need of some relatives to download films, books, etc. from the internet",
+	"without the difficulty of search for it in the browser (as well to avoid all the advertising these kind of pages produce),",
+	"add it to a torrent client, etc. The fact of have the full process in the same app, make it easier for them.</p>",
+	"Backend technologies:",
+        "<ul>",
+	"<li>PM2 Node.js process manager</li><li>ExpressJS</li><li>Socket.IO</li></ul>",
+	"Frontend technologies:",
+        "<ul><li>Quasar Framework</li><li>VueJS</li></ul>",
+	"Other technologies:",
+	"<ul>",
+	"<li>AWS S3 for storage</li>",
+	"<li>ClamAV antivirus for scanning files</li>",
+	"<li>Transmission Torrent Client</li>",
+	"<li>Docker for deployment</li>",
+	"</ul>"
+      ],
+      [
+        "<p>Bizi-Meteo is a webapp that provides information to the user about bicycle stations/parkings in",
+        "Zaragoza (Spain) && the weather in any city, town or village of Spain.</p>",
+        "<p>The app uses the <a href=\"https://developers.google.com/maps/documentation/javascript/\"",
+        "target=\"_blank\">Google Maps API</a>",
+        "in order to show in te map the best route from any point to the desire BiZi station and the",
+        "<a href=\"http://www.zaragoza.es/docs-api/\" target=\"_blank\">Ayuntamiento de Zaragoza API</a> in order",
+        "to get all the information related to the BiZi stations (current status, bicycles available, address...).</p>",
+        "<p>The weather information is extracted from the AEMET web page, through the open XML files that they provide.</p>",
+        "<p>The user can choose in any case, if the application must work with the information in JSON or XML format.</p>",
+        "Used technologies for the development:",
+        "<ul>",
+        "<li>Frontend: HTML5/CSS3, JQuery, ChartJS</li>",
+        "<li>Backend:",
+        "<ul>",
+        "<li>REST API between server and client: Slim PHP Framework</li>",
+        "<li>BiZi's info and generated stats are also managed through Slim PHP Framework with PHP5</li>",
+        "<li>The Meteo info, however it's handled with Java and some libaries (Freemarker, Gson, JDOM...)</li>",
+        "</ul>",
+        "</li>",
+        "<li>DB:",
+        "<ul>",
+        "<li>Parse.com: cloud database to store the stats info</li>",
+        "<li>MariaDB 10 to store the Meteo info from AEMET</li>",
+        "</ul>",
+        "</li>",
+        "</ul>"
+      ],
+      [
+        "Routes EINA is an SmartCampus that allows students and any other person who access the campus to",
+        "know where they are in every moment, how to move through and between the buildings,",
+        "where to find some services, etc...<br><br>",
+        "The main funcionalities of the app are:",
+        "<ul>",
+        "<li>Switch betweens floors of the buildings</li>",
+        "<li>Search of almost any room in the Campus buildings</li>",
+        "<li>Search of routes between rooms of different buildings and floors</li>",
+        "<li>GPS location</li>",
+        "<li>Download of the Campus restaurants weekly menu</li>",
+        "<li>Save positions in the map as favorites</li>",
+        "<li>Save and remember where you parked your car with a double touch!</li>",
+        "</ul><br>",
+        "Used technologies for the development:",
+        "<ul>",
+        "<li>Frontend: HTML5/CSS3, AngularJS && Ionic Framework</li>",
+        "<li>Backend: RESTful web service with JAX-RS</li>",
+        "<li>DB: PostgreSQL (with the use of PostGIS && PgRouting)</li>",
+        "</ul><br>"
+      ]
+    ]
+  },
+  "skills-modal":{
+    "frontend":{
+      "title":"More Frontend skills"
+    },
+    "backend":{
+      "title":"More Backend skills"
+    }
+  }
+}
