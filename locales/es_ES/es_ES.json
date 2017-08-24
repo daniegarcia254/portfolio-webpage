@@ -142,7 +142,7 @@
 	"</ul>"
       ],
       [
-        "<p>Ejemplo de una API REST desarrollada con Loopback que puede ser usado como base para un juego de comunidades",
+        "<p>Ejemplo de una API REST desarrollada con Loopback que puede ser usada como base para un juego de comunidades",
 	"donde los usuarios puede registrarse, loguearse, participar en diferentes comunidades, escribir comentarios, etc.</p>",
 	"<p>Inicialmente la API fue creada para usarse en juego (Hattrick) donde los usuarios se registrarian en diferentes",
 	"comunidades de diferentes categorías, respondiendo diariamente a tres preguntas con el objetivo de ganar puntos y ",
