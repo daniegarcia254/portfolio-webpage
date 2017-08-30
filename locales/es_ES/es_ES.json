@@ -139,7 +139,8 @@
 	"<li>ClamAV antivirus para escanear los archivos descargados</li>",
 	"<li>Transmission Torrent Client para descargar</li>",
 	"<li>Docker para el despliegue de la aplicación</li>",
-	"</ul>"
+	"</ul>",
+	"<p>NOTE: En la demo pudes realizar login con el usuario \"demo\"</p>"
       ],
       [
         "<p>Ejemplo de una API REST desarrollada con Loopback que puede ser usada como base para un juego de comunidades",

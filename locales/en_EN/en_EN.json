@@ -130,11 +130,12 @@
 	"<li>ClamAV antivirus for scanning files</li>",
 	"<li>Transmission Torrent Client</li>",
 	"<li>Docker for deployment</li>",
-	"</ul>"
+	"</ul>",
+	"<p>NOTE: In the demo you can login with the user \"demo\"</p>"
       ],
       [
         "<p>Example of a Loopback REST API that can be used as base for a community game where users can register, ",
-	"login, join to differents communities, post comments, etc.</p>",
+	"login, join to different communities, post comments, etc.</p>",
 	"<p>Initially the API was created to be used in a game (Hattrick) where users would answers, everyday, ",
 	"3 questions related to the community category, winning points and competing against the rest of the community users.</p>",
 	"<p>The API is prepared to work only with logged users, using authentication tokens. ",
