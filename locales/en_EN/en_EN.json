@@ -148,6 +148,27 @@
         "</ul>"
       ],
       [
+        "<p>Responisve web portal with",
+	"<ul><li>Login screen</li><li>Main screen with graph and grid of user statistics</li></ul></p>",
+	"<p>The user will be able to login in the portal and see some user statistics represented in a graph and a grid</p>",
+	"<p><ul><li>Demo user: \"stats\"</li><li>Demo pwd: \"stats\"</li></ul></p>",
+        "Frontend technologies:",
+        "<ul>",
+        "<li>ExtJS 6.5.1 Framework</li>",
+        "</ul>",
+	"Backend technologies:",
+        "<ul>",
+        "<li>ClaudiaJS: to build the AWS API Gateway</li>",
+	"<li>NodeJS</li>",
+	"<li>JWT for user authentication</li>",
+        "</ul>",
+	"Other technologies:",
+        "<ul>",
+        "<li>AWS: to deploy the API Gateway and the Lambda function</li>",
+	"<li>Docker for deployment</li>",
+        "</ul>"
+      ],
+      [
         "Routes EINA is an SmartCampus that allows students and any other person who access the campus to",
         "know where they are in every moment, how to move through and between the buildings,",
         "where to find some services, etc...<br><br>",
