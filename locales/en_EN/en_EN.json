@@ -150,8 +150,8 @@
       [
         "<p>Responisve web portal with",
 	"<ul><li>Login screen</li><li>Main screen with graph and grid of user statistics</li></ul></p>",
-	"<p>The user will be able to login in the portal and see some user statistics represented in a graph and a grid</p>",
-	"<p><ul><li>Demo user: \"stats\"</li><li>Demo pwd: \"stats\"</li></ul></p>",
+	"<p>The user will be able to login in the portal and see some user statistics represented in a graph and a grid.</p>",
+	"<p>Demo user/password   -->   \"stats\" / \"st4ts\"</p><br>",
         "Frontend technologies:",
         "<ul>",
         "<li>ExtJS 6.5.1 Framework</li>",

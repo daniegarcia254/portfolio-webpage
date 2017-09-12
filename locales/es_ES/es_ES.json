@@ -162,7 +162,7 @@
 	"<ul><li>Pantalla de login</li><li>Pantall principal donde se muestran estadísticas de usuarios en un grafo y una tabla/grid</li></ul></p>",
 	"<p>The user will be able to login in the portal and see some user statistics represented in a graph and a grid</p>",
 	"<p>El usuario podrá realizar login en el portal para visualizar las estádisticas de usuarios.</p>",
-	"<p><ul><li>Demo user: \"stats\"</li><li>Demo pwd: \"stats\"</li></lu></p>",
+	"<p>Demo user/password   -->  \"stats\" / \"stats\"</p><br>",
 	"Frontend technologies:",
 	"<li>ExtJS 6.5.1 Framework</li>",
 	"</ul>",
