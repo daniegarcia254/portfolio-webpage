@@ -143,19 +143,16 @@
 	"<p>NOTE: En la demo pudes realizar login con el usuario \"demo\"</p>"
       ],
       [
-        "<p>Ejemplo de una API REST desarrollada con Loopback que puede ser usada como base para un juego de comunidades",
-	"donde los usuarios puede registrarse, loguearse, participar en diferentes comunidades, escribir comentarios, etc.</p>",
-	"<p>Inicialmente la API fue creada para usarse en juego (Hattrick) donde los usuarios se registrarian en diferentes",
-	"comunidades de diferentes categorías, respondiendo diariamente a tres preguntas con el objetivo de ganar puntos y ",
-	"competir con el resto de usuarios pertenecientes a la comunidad</p>",
-	"<p>La API está implementada para funcionarr únicamente con usuarios logueados, usando autenticación con tokens.",
-	"Los usuarios también pueden resetear sus passwords, y aademás recibir emails de registro y cambio de contrasaseña.</p>",
-        "Tecnologías usadas para el desarrollo:",
-        "<ul>",
-        "<li>LoopBack: Node.js API Framework</li>",
-        "<li>MySQL base de datos</li>",
-	"<li>Docker para el despliegue</li>",
-        "</ul>"
+        "<p>Hattrick es una aplicación web desarrollada con ReactJS + Redux + React-Router que puede ser usada como base para un juego comunitario donde los usuarios pueden registrarse, hacer login, ",
+	"unirse a diferentes comunidades, poner comentarios, etc.</p>",
+	"<p>La base del juego consiste en que los usuarios contesten cada día 3 preguntas relacionadas con la categoría de la comunidad, ganando puntos si aciertan y de esta manera compitiendo contra",
+	"el resto de usuarios de la comunidad</p>",
+	"<p>Todo esto es posible a traves de una API REST desarrollada con Loopback. La API está preparada para funcionar únicamente con usuarios logueados, usando tokens de autenticación. ",
+	"También hay implementado un sistema de e-mails para informar a los usuarios al registrarse, cambiar su contraseña, etc.",
+        "Backend technologies:",
+        "<ul><li>Loopback: Node.js API Framework</li><li>MySQL database</li><li>PM2 Node.js process manager</li></ul>",
+        "Frontend technologies:",
+        "<ul><li>ReactJS + Redux + React-Router</li></ul>" 
       ],
       [
         "<p>Portal web responsive con:",

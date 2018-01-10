@@ -134,18 +134,14 @@
 	"<p>NOTE: In the demo you can login with the user \"demo\"</p>"
       ],
       [
-        "<p>Example of a Loopback REST API that can be used as base for a community game where users can register, ",
-	"login, join to different communities, post comments, etc.</p>",
-	"<p>Initially the API was created to be used in a game (Hattrick) where users would answers, everyday, ",
-	"3 questions related to the community category, winning points and competing against the rest of the community users.</p>",
-	"<p>The API is prepared to work only with logged users, using authentication tokens. ",
-	"Users can also reset their passwords, and they will receive emails when they register or change their password.</p>",
-        "Used technologies for the development:",
-        "<ul>",
-        "<li>LoopBack: Node.js API Framework</li>",
-        "<li>MySQL database</li>",
-	"<li>Docker for deployment</li>",
-        "</ul>"
+        "<p>Hattrick is a ReactJS + Redux + React-Router webapp that can be used as base for a community game where users can register, login, join to differents communities, post comments, etc.</p>",
+	"<p>The base of the game is that users would answers, everyday, 3 questions related to the community category, winning points and playing this way against the rest of the community users.</p>",
+	"<p>All of this can be made thanks a REST API developed with Loopback. The API is prepared to work only with logged users, using authentication tokens. An email system is also implemented, ",
+	"allowing users to receive emails when they register or change their password.</p>",
+	"Backend technologies:",
+        "<ul><li>Loopback: Node.js API Framework</li><li>MySQL database</li><li>PM2 Node.js process manager</li></ul>",
+	"Frontend technologies:",
+        "<ul><li>ReactJS + Redux + React-Router</li></ul>"
       ],
       [
         "<p>Responisve web portal with",
