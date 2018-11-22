@@ -3,5 +3,12 @@
   "description": "Daniel Garcia: My personal portfolio web",
   "repository": "https://github.com/daniegarcia254/portfolio-webpage",
   "keywords": ["node", "javascrip", "express", "heroku", "dgarcia", "danigarciadev", "daniel", "portfolio"],
-  "image": "heroku/nodejs"
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
