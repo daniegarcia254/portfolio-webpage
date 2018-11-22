@@ -8,20 +8,20 @@
 				
 				$to      = 'daniegarcia254@gmail.com';
 				$subject = 'Contact from portfolio web';
-				$headers = 'From: ' . $_POST['email'] . "\r\n" .
-    						'X-Mailer: PHP/' . phpversion();
+				$headers = 'From: ' . $_POST['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 				$message = "Nombre: " . $_POST['name'] . "\r\n\r\n" . "Email: " . $_POST['email'] . "\r\n\r\n" . $_POST['message'];
 				
-				if (mail($to, $subject, $message, $headers)) {
+				$success = mail($to, $subject, $message, $headers);
+				if (!$success) {
+					$res['sendstatus'] = 0;
+					$res['message'] = error_get_last()['message'];
+					echo json_encode($res);	
+				} else {
 					$res['sendstatus'] = 1;
 					$res['message'] = 'Email has been sent succesfully';
 					echo json_encode($res);
-				
-				} else {
-					$res['sendstatus'] = 0;
-					$res['message'] = 'Error with the PHP mail function';
-					echo json_encode($res);	
 				}
+					
 				break;	
 			
 			default:
