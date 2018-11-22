@@ -19,15 +19,15 @@ $(document).ready(function() {
     });
 
     $('.idioma-en').click(function(){
-        window.location.href = "http://" + window.location.host + "/index.html";
+        window.location.href = "//" + window.location.host + "/index.html";
     });
     $('.idioma-centre-en').click(function(){
-        window.location.href = "http://" + window.location.host + "/index.html";
+        window.location.href = "//" + window.location.host + "/index.html";
     });
     $('.idioma-es').click(function(){
-       window.location.href = "http://" + window.location.host + "/index.html?lng=es";
+       window.location.href = "//" + window.location.host + "/index.html?lng=es";
     });
     $('.idioma-centre-es').click(function(){
-        window.location.href = "http://" + window.location.host + "/index.html?lng=es";
+        window.location.href = "//" + window.location.host + "/index.html?lng=es";
     });
 });
