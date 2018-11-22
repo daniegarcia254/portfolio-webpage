@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     var options = {
         lng: window.location.search == '' ? "en_EN" : window.location.search.substring(1).split("=")[1]+"_"+window.location.search.substring(1).split("=")[1].toUpperCase(),
-        resGetPath: './locales/__lng__/__lng__.json'
+        resGetPath: '/locales/__lng__/__lng__.json'
     };
 
     i18n.init(options, function (t) {
