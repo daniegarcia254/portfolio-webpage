@@ -1,6 +1,4 @@
 <?php
-echo "Claro";
-die();
 	header('Content-Type: application/json');
 
 	if (isset($_POST['action'])) {
