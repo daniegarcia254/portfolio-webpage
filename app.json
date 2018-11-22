@@ -3,6 +3,9 @@
   "description": "Daniel Garcia: My personal portfolio web",
   "repository": "https://github.com/daniegarcia254/portfolio-webpage",
   "keywords": ["php", "javascript", "heroku", "dgarcia", "danigarciadev", "daniel", "portfolio"],
+  "addons": [
+    "sendgrid"
+  ],
   "buildpacks": [
     {
       "url": "heroku/php"

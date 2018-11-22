@@ -1,4 +1,7 @@
 <?php
+	
+	require 'vendor/autoload.php';
+
 	header('Content-Type: application/json');
 
 	if (isset($_POST['action'])) {
@@ -6,24 +9,21 @@
 		switch ($_POST['action']) {
 			case 'sendmail':
 				
-				$to      = 'daniegarcia254@gmail.com';
-				$subject = 'Contact from portfolio web';
-				$headers = 'From: ' . $_POST['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-				$message = "Nombre: " . $_POST['name'] . "\r\n\r\n" . "Email: " . $_POST['email'] . "\r\n\r\n" . $_POST['message'];
-				
-				$success = mail($to, $subject, $message, $headers);
-				if (!$success) {
-					$res['sendstatus'] = 0;
-					print_r(error_get_last()); die();
-					$res['message'] = error_get_last()['message'];
-					echo json_encode($res);	
-				} else {
-					$res['sendstatus'] = 1;
-					$res['message'] = 'Email has been sent succesfully';
-					echo json_encode($res);
-				}
-					
-				break;	
+				$from = new SendGrid\Email(null, $_POST['email']);
+				$subject = "Contact from portfolio web";
+				$to = new SendGrid\Email(null, "daniegarcia254@gmail.com");
+				$content = new SendGrid\Content("text/plain", "Nombre: " . $_POST['name'] . "\r\n\r\n" . "Email: " . $_POST['email'] . "\r\n\r\n" . $_POST['message']);
+				$mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+				$apiKey = getenv('SENDGRID_API_KEY');
+				$sg = new \SendGrid($apiKey);
+
+				$response = $sg->client->mail()->send()->post($mail);
+				echo $response->statusCode();
+				echo $response->headers();
+				echo $response->body();
+				//echo json_encode($response);
+				break;
 			
 			default:
 				$res['sendstatus'] = 0;
