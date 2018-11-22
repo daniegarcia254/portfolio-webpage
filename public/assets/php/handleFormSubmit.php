@@ -19,15 +19,12 @@
 				$sg = new \SendGrid($apiKey);
 
 				$response = $sg->client->mail()->send()->post($mail);
-				echo $response->statusCode();
-				echo $response->headers();
-				echo $response->body();
-				//echo json_encode($response);
+				echo json_encode($response);
 				break;
 			
 			default:
 				$res['sendstatus'] = 0;
-				$res['message'] = 'Action '+$_POST['action']+' is unkown';
+				$res['message'] = 'Action '+$_POST['action']+' is unknown';
 				echo json_encode($res);
 				break;
 		}

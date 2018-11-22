@@ -261,7 +261,7 @@
 			            url: 'assets/php/handleFormSubmit.php'
 			        })
 			            .done(function( data, textStatus, jqXHR ) {
-							console.log(data);
+					console.log(data);
 			                if (data.sendstatus == 0){
 			                    response_fail.fadeIn(500);
 			                    if (window.location.search.substring(1).split("=")[0] == 'lng') {
@@ -279,7 +279,7 @@
 			                }
 			            })
 			            .fail(function( jqXHR, textStatus, errorThrown ) {
-							console.log(jqXHR, textStatus, errorThrown);
+					console.log(jqXHR, textStatus, errorThrown);
 			               	response_fail.fadeIn(500);
 							if (window.location.search.substring(1).split("=")[0] == 'lng') {
 								response_fail.html('<i class="fa fa-warning"></i>Error al enviar el email, por favor inténtelo de nuevo.');	
