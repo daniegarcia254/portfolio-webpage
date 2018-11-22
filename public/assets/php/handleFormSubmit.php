@@ -14,6 +14,7 @@
 				$success = mail($to, $subject, $message, $headers);
 				if (!$success) {
 					$res['sendstatus'] = 0;
+					print_r(error_get_last()); die();
 					$res['message'] = error_get_last()['message'];
 					echo json_encode($res);	
 				} else {
