@@ -297,15 +297,6 @@
 				html: true
 			})
 		});
-
-		/* Manage links */
-		$('a').each(function(){
-			var href = $(this).attr('href');
-			if (href && href.match('my-custom-dns')){
-				href = href.replace('my-custom-dns',window.location.host);
-				$(this).attr('href',href);
-			}
-		});
 	});
 
 })(jQuery);
