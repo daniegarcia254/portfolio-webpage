@@ -94,8 +94,8 @@
         "<li>Backend: JAX-RS, JSoup para el web-scrapping</li>",
         "<li>DB: Oracle SQL</li>",
         "</ul>",
-	"<p>La aplicación Android no está disponible debido a que ha sido retirada del repositorio oficial del CULM</p>",
-	"<p>La demo, preferiblemente, debe ser testeada en el navegador de un dispositivo móvil.</p>"
+        "<p>La aplicación Android no está disponible debido a que ha sido retirada del repositorio oficial del CULM</p>",
+        "<p>La demo, preferiblemente, debe ser testeada en el navegador de un dispositivo móvil.</p>"
       ],
       [
         "MediumCandy URLShortener es un acortador de URL's con las siguientes funcionalidades:",
@@ -113,42 +113,42 @@
         "</ul><br>"
       ],
       [
-	"<p>DownTorrent es una webapp que simplifica y unifica el proceso de descarga de un torrent. La aplicación permite:</p>",
+        "<p>DownTorrent es una webapp que simplifica y unifica el proceso de descarga de un torrent. La aplicación permite:</p>",
         "<ul>",
         "<li>Buscar torrents en <em>The Pirate Bay</em></li>",
         "<li>Descargar y administrar (eliminar, pausar, comenzar) los torrents y visualizar su progreso de descarga</li>",
         "<li>Escanear los torrents descargados en busca de virus</li>",
         "<li>Subir los torrents descargados a un bucket de S3 y descagarlos en de ahí en cualquier momento</li>",
         "</ul>",
-	"<p>El proyecto viene motivado por la necesidad de amigos y familiares de poder descargar libros, películas, etc. de internet",
-	"sin la dificultad que entraña la búsqueda en internet, evitar la publicidad e instalar un cliente torrent. En definitiva, hacerles",
-	"la vida más fácil para descargar contenido de internet, teniéndolo todo en la misma aplicación.</p>",
-	"Backend:",
+        "<p>El proyecto viene motivado por la necesidad de amigos y familiares de poder descargar libros, películas, etc. de internet",
+        "sin la dificultad que entraña la búsqueda en internet, evitar la publicidad e instalar un cliente torrent. En definitiva, hacerles",
+        "la vida más fácil para descargar contenido de internet, teniéndolo todo en la misma aplicación.</p>",
+        "Backend:",
         "<ul>",
-	"<li>PM2 Node.js process manager</li>",
-	"<li>ExpressJS</li>",
-	"<li>Socket.IO</li>",
-	"</ul>",
-	"Frontend:",
+        "<li>PM2 Node.js process manager</li>",
+        "<li>ExpressJS</li>",
+        "<li>Socket.IO</li>",
+        "</ul>",
+        "Frontend:",
         "<ul><li>Quasar Framework</li>",
-	"<li>VueJS</li>",
-	"</ul>",
-	"Otras tecnologías:",
-	"<ul>",
-	"<li>AWS S3 para almacenamiento de los torrents</li>",
-	"<li>ClamAV antivirus para escanear los archivos descargados</li>",
-	"<li>Transmission Torrent Client para descargar</li>",
-	"<li>Docker para el despliegue de la aplicación</li>",
-	"</ul>",
-	"<p>NOTE: En la demo pudes realizar login con el usuario \"demo\"</p>"
+        "<li>VueJS</li>",
+        "</ul>",
+        "Otras tecnologías:",
+        "<ul>",
+        "<li>AWS S3 para almacenamiento de los torrents</li>",
+        "<li>ClamAV antivirus para escanear los archivos descargados</li>",
+        "<li>Transmission Torrent Client para descargar</li>",
+        "<li>Docker para el despliegue de la aplicación</li>",
+        "</ul>",
+        "<p>NOTE: En la demo pudes realizar login con el usuario \"demo\"</p>"
       ],
       [
         "<p>Hattrick es una aplicación web desarrollada con ReactJS + Redux + React-Router que puede ser usada como base para un juego comunitario donde los usuarios pueden registrarse, hacer login, ",
-	"unirse a diferentes comunidades, poner comentarios, etc.</p>",
-	"<p>La base del juego consiste en que los usuarios contesten cada día 3 preguntas relacionadas con la categoría de la comunidad, ganando puntos si aciertan y de esta manera compitiendo contra",
-	"el resto de usuarios de la comunidad</p>",
-	"<p>Todo esto es posible a traves de una API REST desarrollada con Loopback. La API está preparada para funcionar únicamente con usuarios logueados, usando tokens de autenticación. ",
-	"También hay implementado un sistema de e-mails para informar a los usuarios al registrarse, cambiar su contraseña, etc.",
+        "unirse a diferentes comunidades, poner comentarios, etc.</p>",
+        "<p>La base del juego consiste en que los usuarios contesten cada día 3 preguntas relacionadas con la categoría de la comunidad, ganando puntos si aciertan y de esta manera compitiendo contra",
+        "el resto de usuarios de la comunidad</p>",
+        "<p>Todo esto es posible a traves de una API REST desarrollada con Loopback. La API está preparada para funcionar únicamente con usuarios logueados, usando tokens de autenticación. ",
+        "También hay implementado un sistema de e-mails para informar a los usuarios al registrarse, cambiar su contraseña, etc.",
         "Backend technologies:",
         "<ul><li>Loopback: Node.js API Framework</li><li>MySQL database</li><li>PM2 Node.js process manager</li></ul>",
         "Frontend technologies:",
@@ -156,20 +156,21 @@
       ],
       [
         "<p>Portal web responsive con:",
-	"<ul><li>Pantalla de login</li><li>Pantall principal donde se muestran estadísticas de usuarios en un grafo y una tabla/grid</li></ul></p>",
-	"<p>The user will be able to login in the portal and see some user statistics represented in a graph and a grid</p>",
-	"<p>El usuario podrá realizar login en el portal para visualizar las estádisticas de usuarios.</p>",
-	"<p>Demo user/password   -->  \"stats\" / \"stats\"</p><br>",
-	"Frontend technologies:",
-	"<li>ExtJS 6.5.1 Framework</li>",
-	"</ul>",
-	"Backend technologies:",
-	"<ul>",
-	"<li>ClaudiaJS: to build the AWS API Gateway</li>","<li>NodeJS</li>",
-	"<li>JWT for user authentication</li>",
-	"Other technologies:",
-	"<li>AWS: to deploy the API Gateway and the Lambda function</li>","<li>Docker for deployment</li>", 
-	"</ul>"
+        "<ul><li>Pantalla de login</li><li>Pantalla principal donde se muestran estadísticas de usuarios en un gráfico y una tabla/grid</li></ul></p>",
+        "<p>El usuario podrá realizar login en el portal para visualizar las estádisticas de usuarios.</p>",
+        "<p>Demo usuario/password   -->  \"stats\" / \"st4ts\"</p><br>",
+        "Frontend:",
+        "<li>ExtJS 6.5.1 Framework</li>",
+        "</ul>",
+        "Backend:",
+        "<ul>",
+        "<li>ClaudiaJS: para desplegar el servicio en un AWS API Gateway</li>",
+        "<li>NodeJS</li>",
+        "<li>JWT para la autenticación</li>",
+        "Otras tecnologías:",
+        "<li>AWS: para desplegar una función Lambda a través de un API Gateway</li>",
+        "<li>Heroku/Docker para el despliegue</li>", 
+        "</ul>"
       ],
       [
         "<p>Routes EINA es un <em>SmartCampus</em> que permite a los estudiantes o cualquier otra persona que visite el campus ",
@@ -201,18 +202,10 @@
         "<a href=\"https://es.linkedin.com/in/gginestra\" target=\"_blank\">Guillermo Ginestra </a><br>",
         "<a href=\"https://es.linkedin.com/pub/jorge-garuz-sánchez/70/510/509\" target=\"_blank\">Jorge Garuz Sánchez</a>'></i>"
       ],
-      [
-
-      ],
-      [
-
-      ],
-      [
-
-      ],
-      [
-
-      ]
+      [],
+      [],
+      [],
+      []
     ]
   },
   "skills-modal":{
