@@ -9,7 +9,7 @@
 		switch ($_POST['action']) {
 			case 'sendmail':
 				
-				$from = new SendGrid\Email(null, $_POST['email']);
+				$from = new SendGrid\Email(null, getenv('SENDGRID_FROM'));
 				$subject = "Contact from portfolio web";
 				$to = new SendGrid\Email(null, "daniegarcia254@gmail.com");
 				$content = new SendGrid\Content("text/plain", "Nombre: " . $_POST['name'] . "\r\n\r\n" . "Email: " . $_POST['email'] . "\r\n\r\n" . $_POST['message']);
